@@ -10,7 +10,7 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
   let { title, thumbnail, timestamp, views, ago, url } = vid
   let wm = 'Downloading audio please wait'
 
-  let captvid = `╭──── 〔 Y O U T U B E 〕 ─⬣
+  let captvid = `╭──── 〔 *Y O U T U B E* 〕 ─⬣
 ⬡ Title: ${title}
 ⬡ Duration: ${timestamp}
 ⬡ Views: ${views}
@@ -25,7 +25,7 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
 ⬡ Link: ${url}
 ╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['VIDEO', `${usedPrefix}ytmp4 ${url} 360`], false, { quoted: m, 'document': { 'url':'https://wa.me/917605902011' },
 'mimetype': global.dpdf,
-'fileName': `𝔾𝕌ℝ𝕌 ℙ𝕃𝔸𝕐𝔼ℝ`,
+'fileName': `@sandaru`,
 'fileLength': 666666666666666,
 'pageCount': 666,contextInfo: { externalAdReply: { showAdAttribution: true,
 mediaType:  2,
@@ -67,6 +67,6 @@ handler.tags = ['downloader']
 handler.command = /^play$/i
 
 handler.exp = 0
-handler.diamond = true
+handler.diamond = false
 
 export default handler
